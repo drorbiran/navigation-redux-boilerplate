@@ -1,6 +1,6 @@
 # react-native-navigation-bootstrap
 
-## Bootstrap for a vanilla `react-native-navigation` based project
+## Bootstrap for a `react-native-navigation` and `Redux` based project
 
 Clone this repository to start a project based on
 

@@ -8,9 +8,12 @@
     "xcode": "open ios/react_native_navigation_bootstrap.xcodeproj"
   },
   "dependencies": {
-    "react-native": "0.44.2",
+    "prop-types": "*",
     "react": "16.0.0-alpha.6",
+    "react-native": "0.44.2",
     "react-native-navigation": "1.x.x",
-    "prop-types": "*"
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   }
 }
