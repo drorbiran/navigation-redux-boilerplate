@@ -1,4 +1,4 @@
-package com.react_native_navigation_bootstrap;
+package com.navigationreduxboilerplate;
 
 import com.reactnativenavigation.controllers.SplashActivity;
 
