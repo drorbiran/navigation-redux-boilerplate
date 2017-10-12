@@ -19,6 +19,7 @@ import reducers from './store/reducers';
 
 import Screen1 from './modules/module1/Screen1';
 import Screen2 from './modules/module1/Screen2';
+import Screen3 from './modules/module1/Screen3';
 
 
 const store = createStore(combineReducers(reducers),{},applyMiddleware(thunk));
@@ -27,6 +28,7 @@ const store = createStore(combineReducers(reducers),{},applyMiddleware(thunk));
 // using redux, pass your store and the Provider object from react-redux
 Navigation.registerComponent('Screen1', () => Screen1,store,Provider);
 Navigation.registerComponent('Screen2', () => Screen2);
+Navigation.registerComponent('Screen3', () => Screen3)
 
 Navigation.startTabBasedApp({
     tabs: [

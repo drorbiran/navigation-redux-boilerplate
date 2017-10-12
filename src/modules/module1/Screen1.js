@@ -5,25 +5,36 @@
 // avoid having view logic & local component state in them, use "dumb" components instead
 
 import React, { Component } from 'react';
-import {View,Text} from 'react-native'
+import {View} from 'react-native';
 import { connect } from 'react-redux';
+
+import {Container,Button} from '../../Components';
 
 import * as domainSelectors from '../../store/domain/domain.reducer';
 import * as domainActions from '../../store/domain/domain.actions'
 
-
-
-
 class Screen1 extends Component {
     componentWillMount(){} //when render
 
+    pushScreen = () => {
+        this.props.navigator.push({
+            screen: 'Screen3',
+            title: 'Screen 3'
+        })
+    };
+
     render() {
         return (
-            <Text
+        <Container backgroundColor='#daecfb'>
+            <Button
                 onPress={() => this.props.dispatch(domainActions.actionName("New Text"))}
-            >
-                {this.props.text}
-            </Text>
+                text={this.props.text}
+            />
+            <Button
+                onPress={this.pushScreen}
+                text="Press me to push another Screen"
+            />
+        </Container>
     );
 }
 }

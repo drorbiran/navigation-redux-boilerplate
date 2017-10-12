@@ -7,7 +7,7 @@ import * as types from './domain.actionsTypes'
 import _ from 'lodash';
 
 const INITIAL_STATE = {
-    text: "React Native Navigation Redux Boiler Plate",
+    text: "Press me to change the store state",
     number: 8
 };
 
